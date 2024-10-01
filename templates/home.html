@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<head>
+    <style>
+    .button {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button:active {
+  background-color: #1f3241;
+  box-shadow: none;
+  color: #081c2b;
+}  
+</style>
+</head>
+<h2>Home Page</h2>
+<p>Welcome back, {{ username }}!</p>
+<center><button type="button" class="button"><a style="text-decoration: none;"href="/nived/attendance">NEW STUDENT</a></button></center>
+<center><button type="button" class="button" onclick="alert('Attendance is now being taken..')"><a style="text-decoration: none;"href="/nived/plugin">PLUGIN SYTSEM</a></button></center>
+<center><button type="button" class="button"><a style="text-decoration: none;"href="/nived/attendancesheet">SHOW ATTENDANCE</a></button></center>
+<center><button type="button" class="button"><a style="text-decoration: none;"href="/nived/studentdetails">STUDENT DETAILS</a></button></center>
+{% endblock %} 
+

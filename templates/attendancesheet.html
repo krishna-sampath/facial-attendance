@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<head><style>
+    .table,th,td {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 200px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    } 
+ </style>
+    </head>
+    <table>
+        <tr>
+    <th>ID</th> <th>NAME</th><th>DATE</th><th>TIME</th></tr>
+
+{% for i in range(0,length) %}
+<tr>
+     <td>{{id[i]}}</td> <td>{{name[i]}}</td> <td>{{date[i]}}</td> <td>{{time[i]}}</td>
+    </tr>
+     {% endfor %}
+     
+     </table>
+{% endblock %} 
