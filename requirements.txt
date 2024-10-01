@@ -1,0 +1,8 @@
+flask==2.2.2
+flask_mysqldb
+opencv-python
+opencv-contrib-python
+numpy
+pandas==1.4.0
+pillow
+tk
